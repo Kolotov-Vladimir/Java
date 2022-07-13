@@ -1,0 +1,32 @@
+Реализуйте простые домашние часы.
+
+На вход подаётся число секунд, которое прошло с момента начала суток (00:00:00). Выведите текущее время в формате ЧЧ:ММ:СС.
+
+Примечание. Используйте 24-часовой формат.
+
+Sample Input 1:
+
+41000
+Sample Output 1:
+
+11:23:20
+Sample Input 2:
+
+3600
+Sample Output 2:
+
+01:00:00
+
+#Решение
+
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner a = new Scanner(System.in);
+        int x = a.nextInt() % 86400;
+        int h = x / 3600;
+        int m = (x - 3600 * h) / 60;
+        int s = x - 3600 * h - m * 60;       
+        System.out.println(h/10+""+h%10+":"+m/10+""+m%10+":"+s/10+""+s%10);
+   }
+}
