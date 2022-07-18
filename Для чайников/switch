@@ -1,0 +1,39 @@
+Оператор switch - Это очень удобная конструкция для выбора каких-либо действий по конкретным флагам. Конструкция проверяет переменную на равенство с определённым заранее списком значений. 
+Синтаксис:
+switch (выражение) {
+    case  value1:
+        //Группа команд
+        break; 
+
+    case value2 :
+        //Группа команд
+        break; 
+    
+    ... //Можно вставить столько проверяемых значений, сколько нужно
+
+    default: //Необязательно
+       //Группа команд, исполняемая, если значение выражения не рано ни одному из случаев
+}
+
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Введите пол мужчина/женщина: ");
+       String mw = sc.nextLine();
+       sc.close();
+       switch (mw) {
+           case "мужчина":
+               System.out.println("Парень, выглядишь прекрасно!");
+               System.out.println("Полагаю, выпил с утра кружочку кофе?");
+               break;
+           case "женщина":
+               System.out.println("Девушка, вы постриглись?");
+               System.out.println("Или покрасила ногти?");
+               break;
+           default:
+               System.out.println("Я не знаю что ты такое!");
+               System.out.println("Уходи!!!");
+       }
+   }
+}
