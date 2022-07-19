@@ -1,0 +1,16 @@
+int x = 3;
+
+while (x > 0) {
+    System.out.println(x);
+    x--;
+}
+
+int x = 6;
+
+while (x < 10) {
+    System.out.println("Цикл исполняется");
+    System.out.println("x = " + x);
+    x++;
+}
+System.out.println("Цикл завершён");
+System.out.println("x = " + x);
