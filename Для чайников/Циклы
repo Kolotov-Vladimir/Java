@@ -14,3 +14,33 @@ while (x < 10) {
 }
 System.out.println("Цикл завершён");
 System.out.println("x = " + x);
+
+На вход подаётся последовательность слов. Посчитайте общее количество введённых слов.
+
+Примечание. Так как маркер конца последовательности в этой задаче отсутствует, будет удобно воспользоваться методом hasNext().
+Найдите самостоятельно, как он работает.
+
+Sample Input:
+
+Java
+Python
+C++
+Go
+PHP
+Sample Output:
+
+5
+
+
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+        int x=0;
+        Scanner sc = new Scanner(System.in);
+            while(sc.hasNext() == true){
+               String word = sc.next();
+                x++;
+            }
+            System.out.println(x);
+    }
+}
