@@ -99,3 +99,13 @@ String str = "Добро пожаловать в мир Java!";
 System.out.println(str.replace('о', 'А')); //ДАбрА пАжалАвать в мир Java!
 Обратите внимание - метод работает с заменой символов (char), о чём говорят одинарные кавычки.
 
+12. Реверс.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+    Scanner a = new Scanner(System.in);
+    StringBuffer str = new StringBuffer(a.nextLine());
+        str.reverse();
+        System.out.println(str);
+    }
+}
