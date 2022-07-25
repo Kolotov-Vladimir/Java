@@ -109,3 +109,32 @@ aaa
 vvvvv
 aaa
 */
+
+
+
+
+Sample Input:
+1 2 3
+Sample Output:
+
+1 1 1 1
+4 8 16 32
+9 27 81 243
+
+import java.util.Scanner;
+class Example {
+    public static void main(String[] args) {
+Scanner a = new Scanner(System.in);
+        while (a.hasNext() == true){
+         int x = a.nextInt();
+            for (int i = 2; i <=5; i++){
+             if (i != 5){
+                System.out.print((int)Math.pow(x,i) + " ");
+             }
+                else{
+                    System.out.println((int)Math.pow(x,i));
+                }
+            }
+        }
+    }
+}
