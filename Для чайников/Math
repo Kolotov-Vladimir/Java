@@ -68,16 +68,14 @@ signum(double value): возвращает число 1, если число val
 
 System.out.println(Math.signum(2.3)); // 1
 System.out.println(Math.signum(-2.3)); // -1
-sin(double value): возвращает синус угла value
 
+sin(double value): возвращает синус угла value
 sinh(double value): возвращает гиперболический синус угла value
 
 sqrt(double value): возвращает квадратный корень числа value
-
-
 double result1 = Math.sqrt(16); // 4
-tan(double value): возвращает тангенс угла value
 
+tan(double value): возвращает тангенс угла value
 tanh(double value): возвращает гиперболический тангенс угла value
 
 toDegrees(double value) переводит радианы в градусы и toRadians(double value) - градусы в радианы
