@@ -1,28 +1,26 @@
 abs(double value): возвращает абсолютное значение для аргумента value
 
 double result = Math.abs(-13.5); // 13.5
+
 acos(double value): возвращает арккосинус value. Параметр value должен иметь значение от -1 до 1
-
 double result = Math.acos(1); // 0.0
-asin(double value): возвращает арксинус value. Параметр value должен иметь значение от -1 до 1
 
+asin(double value): возвращает арксинус value. Параметр value должен иметь значение от -1 до 1
 atan(double value): возвращает арктангенс value
 
 cbrt(double value): возвращает кубический корень числа value
-
 double result = Math.cbrt(27); // 3
+
 ceil(double value): возвращает наименьшее целое число с плавающей точкой, которое не меньше value
-
 double result = Math.ceil(2.34); // 3
+
 cos(double d): возвращает косинус угла d
-
 cosh(double d): возвращает гиперболический косинус угла d
-
 exp(double d): возвращает основание натурального логарифма, возведенное в степень d
 
 floor(double d): возвращает наибольшее целое число, которое не больше d
-
 double result = Math.floor(2.56); // 2
+
 floorDiv(int a, int b): возвращает целочисленный результат деления a на b
 
 System.out.println(Math.floorDiv(1, 2)); // 0
