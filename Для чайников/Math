@@ -1,3 +1,9 @@
+Если нужно просто вывести число с определённым количеством знаков после запятой, можно использовать для этого форматирование строк:
+double x = 25.364789;
+String formatted = String.format("%.3f", x);
+System.out.println(formatted);    // 25.365
+
+
 abs(double value): возвращает абсолютное значение для аргумента value
 
 double result = Math.abs(-13.5); // 13.5
